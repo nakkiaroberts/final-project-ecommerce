@@ -2,7 +2,61 @@
     font-size: 30px;
 }
 
+.navbar-brand {
+  font-size: 50px;
+}
+
+.d-flex {
+  height: 50px;
+}
+
 .search {
     display: flex;
     justify-content: center;
+}
+
+.fa-seedling {
+  margin-left: 15px;
+  float: left;
+  color: green;
+}
+
+.fa-leaf {
+  /* margin-left: 15px; */
+  /* margin-bottom: 15px; */
+  /* float: left; */
+  color: green;
+}
+
+.fa-copywrite {
+  margin-left: 15px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  float: left;
+}
+
+.fa-facebook {
+  color: black;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  float: right;
+}
+
+.fa-square-instagram {
+  color: black;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  float: right;
+}
+
+.fa-twitter {
+  color: black;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  float: right;
+}
+
+.footer2 {
+  font-size: 20px;
+  padding-bottom: 15px;
 }
