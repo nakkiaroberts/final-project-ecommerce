@@ -1,5 +1,6 @@
 .navbar {
     font-size: 30px;
+    /* padding-bottom: 30px; */
 }
 
 .navbar-brand {
@@ -10,9 +11,24 @@
   height: 50px;
 }
 
-.search {
-    display: flex;
-    justify-content: center;
+button {
+  margin-right: 15px;
+}
+
+form {
+  width: 500px;
+}
+
+li {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.fa-magnifying-glass, .fa-cart-shopping, .fa-user {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 9px;
+  color: gray
 }
 
 .fa-seedling {
@@ -22,9 +38,6 @@
 }
 
 .fa-leaf {
-  /* margin-left: 15px; */
-  /* margin-bottom: 15px; */
-  /* float: left; */
   color: green;
 }
 
@@ -35,28 +48,23 @@
   float: left;
 }
 
-.fa-facebook {
+.fa-facebook, .fa-square-instagram, .fa-twitter {
   color: black;
   margin-right: 15px;
+  margin-top: 15px;
   margin-bottom: 15px;
   float: right;
-}
-
-.fa-square-instagram {
-  color: black;
-  margin-right: 15px;
-  margin-bottom: 15px;
-  float: right;
-}
-
-.fa-twitter {
-  color: black;
-  margin-right: 15px;
-  margin-bottom: 15px;
-  float: right;
+  color: beige;
 }
 
 .footer2 {
   font-size: 20px;
   padding-bottom: 15px;
+}
+
+footer {
+  background-color: black;
+  color: beige;
+  padding: 15px;
+  padding-top: 25px;
 }
