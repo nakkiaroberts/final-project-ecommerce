@@ -2,7 +2,22 @@
     font-size: 30px;
 }
 
-.search {
-    display: flex;
-    justify-content: center;
+.profileHeader {
+    position: relative;
+    font-size: 32px;
+    left: 300px;
+}
+
+.img-with-text {
+    text-align: center;
+    width: 200px;
+    margin-left: 50px;
+}
+
+ .img-with-text img {
+    margin-top: 60px;
+}
+
+.img-with-text h6 {
+    margin-top: 15px;
 }
