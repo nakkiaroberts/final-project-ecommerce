@@ -1,3 +1,12 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
 .navbar {
     font-size: 30px;
     /* padding-bottom: 30px; */
@@ -78,7 +87,7 @@ li {
 }
 
 .footer2 {
-  font-size: 20px;
+  font-size: 20px;  
   padding-bottom: 15px;
 }
 
@@ -87,8 +96,12 @@ footer {
   color: beige;
   padding: 15px;
   padding-top: 25px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  text-align: left;
 }
-
 
 .about-us {
     width: 100%;
@@ -126,4 +139,9 @@ footer {
     margin: 10px 5px;
     align-content: center;
     border: 10px solid white;
+}
+
+.fashion {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
