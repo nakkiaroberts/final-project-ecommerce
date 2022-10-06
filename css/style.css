@@ -1,5 +1,6 @@
 .navbar {
     font-size: 30px;
+    /* padding-bottom: 30px; */
 }
 
 .profileHeader {
@@ -20,4 +21,109 @@
 
 .img-with-text h6 {
     margin-top: 15px;
+}
+
+.navbar-brand {
+  font-size: 50px;
+}
+
+.d-flex {
+  height: 50px;
+}
+
+button {
+  margin-right: 15px;
+}
+
+form {
+  width: 500px;
+}
+
+li {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.fa-magnifying-glass, .fa-cart-shopping, .fa-user {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 9px;
+  color: gray
+}
+
+.fa-seedling {
+  margin-left: 15px;
+  float: left;
+  color: green;
+}
+
+.fa-leaf {
+  color: green;
+}
+
+.fa-copywrite {
+  margin-left: 15px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  float: left;
+}
+
+.fa-facebook, .fa-square-instagram, .fa-twitter {
+  color: black;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  float: right;
+  color: beige;
+}
+
+.footer2 {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+footer {
+  background-color: black;
+  color: beige;
+  padding: 15px;
+  padding-top: 25px;
+}
+
+
+.about-us {
+    width: 100%;
+    height: auto;
+    margin: 25px;
+    padding: 25px;
+    color: black;
+    background-image: url("https://images.unsplash.com/photo-1603400521630-9f2de124b33b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-us h1 {
+    margin: 25px; 
+    padding: 35px;
+}
+
+.about-us p {
+    margin: 25px;
+    padding: 25px;
+}
+
+.about-us img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-item {
+    background-color: #fff;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    margin: 10px 5px;
+    align-content: center;
+    border: 10px solid white;
 }
