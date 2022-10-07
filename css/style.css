@@ -145,3 +145,20 @@ footer {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
+/* .jumbotron { 
+        background: url(https://unsplash.com/photos/rTb9BBa-Rw0/static/images\fall.jpg) no-repeat center center /cover no-repeat;
+} */
+   
+.display-4 {
+  color: orangered;
+  text-align: center;
+  font-weight: bold;
+  /* background: url(https://unsplash.com/photos/rTb9BBa-Rw0/static/images\fall.jpg) no-repeat center center /cover no-repeat; */
+
+}
+
+.lead, .fashion2 {
+  text-align: center;
+  font-size: 30px;
+}
