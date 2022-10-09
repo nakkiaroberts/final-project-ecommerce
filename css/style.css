@@ -162,3 +162,14 @@ footer {
   text-align: center;
   font-size: 30px;
 }
+
+.fa-angle-up {
+  font-size: 25px;
+  float: right;
+  margin-right: 15px;
+  margin-top: 18px;
+}
+
+.btn-primary {
+  background-color: orangered;
+}
