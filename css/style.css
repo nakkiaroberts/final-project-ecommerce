@@ -144,27 +144,41 @@ footer {
 .fashion {
   margin-top: 15px;
   margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 45px;
+  color: rgb(85, 84, 84);
 }
 
-/* .jumbotron { 
-        background: url(https://unsplash.com/photos/rTb9BBa-Rw0/static/images\fall.jpg) no-repeat center center /cover no-repeat;
-} */
+.jumbotron-image { 
+        background-size: cover;
+        height: 300px;
+        width: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+}
    
-.display-4 {
-  color: orangered;
+.mb-4 {
+  color: rgb(127, 75, 38);
+  font-size: 75px;
   text-align: center;
   font-weight: bold;
-  /* background: url(https://unsplash.com/photos/rTb9BBa-Rw0/static/images\fall.jpg) no-repeat center center /cover no-repeat; */
+  padding-top: 50px;;
+}
 
+.lead2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .lead, .fashion2 {
   text-align: center;
   font-size: 30px;
+  
 }
 
 .fa-angle-up {
-  font-size: 25px;
+  font-size: 30px;
   float: right;
   margin-right: 15px;
   margin-top: 18px;
