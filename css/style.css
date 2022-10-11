@@ -3,6 +3,25 @@
     /* padding-bottom: 30px; */
 }
 
+.profileHeader {
+    position: relative;
+    font-size: 32px;
+    left: 300px;
+}
+
+.img-with-text {
+    text-align: center;
+    width: 200px;
+    margin-left: 50px;
+}
+
+ .img-with-text img {
+    margin-top: 60px;
+}
+
+.img-with-text h6 {
+    margin-top: 15px;
+}
 
 .navbar-brand {
   font-size: 50px;
@@ -108,4 +127,3 @@ footer {
     align-content: center;
     border: 10px solid white;
 }
-
