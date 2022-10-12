@@ -120,9 +120,8 @@ footer {
     padding: 35px;
 }
 
-.about-us p {
-    margin: 25px;
-    padding: 25px;
+.about-us h2 {
+  padding: 40px 35px;
 }
 
 .about-us img {
@@ -139,6 +138,48 @@ footer {
     align-content: center;
     border: 10px solid white;
 }
+
+
+/* Start of Index.html CSS */
+
+.carousel {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+}
+
+.card {
+    margin: 25px;
+}
+
+.card:hover {
+    opacity: .5;
+    cursor: pointer;  
+}
+
+.card-body {
+    justify-content: center;
+}
+
+.card img {
+    height: 90%; 
+}
+
+.card-title {
+    font-size: larger;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 20px;
+}
+
+/* End of Index.html CSS */
+
 /* Start Nikki's css */
 
 .fashion {
@@ -192,3 +233,4 @@ footer {
   text-align: center;
 }
 /* End Nikki's css */
+
