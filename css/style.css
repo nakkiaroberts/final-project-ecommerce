@@ -1,6 +1,14 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
 .navbar {
     font-size: 30px;
-    /* padding-bottom: 30px; */
 }
 
 .profileHeader {
@@ -78,7 +86,7 @@
 }
 
 .footer2 {
-  font-size: 20px;
+  font-size: 20px;  
   padding-bottom: 15px;
 }
 
@@ -87,6 +95,11 @@ footer {
   color: beige;
   padding: 15px;
   padding-top: 25px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  text-align: left;
 }
 
 .about-us {
@@ -107,9 +120,8 @@ footer {
     padding: 35px;
 }
 
-.about-us p {
-    margin: 25px;
-    padding: 25px;
+.about-us h2 {
+  padding: 40px 35px;
 }
 
 .about-us img {
@@ -134,3 +146,98 @@ footer {
 .contact-us h1 {
   margin-bottom: 25px;
 }
+
+/* Start of Index.html CSS */
+
+.carousel {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+}
+
+.card {
+    margin: 25px;
+}
+
+.card:hover {
+    opacity: .5;
+    cursor: pointer;  
+}
+
+.card-body {
+    justify-content: center;
+}
+
+.card img {
+    height: 90%; 
+}
+
+.card-title {
+    font-size: larger;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 20px;
+}
+
+/* End of Index.html CSS */
+
+/* Start products css */
+
+.fashion {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 45px;
+  color: rgb(85, 84, 84);
+}
+
+.jumbotron-image { 
+        background-size: cover;
+        height: 300px;
+        width: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+   
+.mb-4 {
+  color: rgb(105, 53, 3);
+  font-size: 75px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 50px;;
+}
+
+.lead2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.lead, .fashion2 {
+  text-align: center;
+  font-size: 30px;
+  
+}
+
+.fa-angle-up {
+  font-size: 30px;
+  float: right;
+  margin-right: 15px;
+  margin-top: 18px;
+}
+
+.btn-primary {
+  background-color: orangered;
+}
+
+.products {
+  text-align: center;
+}
+/* End products css */
+
