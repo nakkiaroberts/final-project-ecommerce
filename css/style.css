@@ -14,20 +14,18 @@ body {
 .profileHeader {
     position: relative;
     font-size: 32px;
-    left: 300px;
+    margin-top: 100px;
 }
 
-.img-with-text {
+.team-bio {
     text-align: center;
-    width: 200px;
-    margin-left: 50px;
+    width: 100%;
+    margin: auto;
+    padding: 25px;
+
 }
 
- .img-with-text img {
-    margin-top: 60px;
-}
-
-.img-with-text h6 {
+.team-bio h6 {
     margin-top: 15px;
 }
 
@@ -39,15 +37,17 @@ body {
   height: 50px;
 }
 
-button {
+/* changed from button to navbar button */
+.navbar button {
   margin-right: 15px;
 }
 
-form {
+/* changed from form to .navbar form */
+.navbar form {
   width: 500px;
 }
 
-li {
+.li {
   margin-left: 25px;
   margin-right: 25px;
 }
@@ -139,6 +139,13 @@ footer {
     border: 10px solid white;
 }
 
+.contact-us {
+  padding: 100px;
+}
+
+.contact-us h1 {
+  margin-bottom: 25px;
+}
 
 /* Start of Index.html CSS */
 
@@ -233,3 +240,4 @@ footer {
   text-align: center;
 }
 /* End products css */
+
