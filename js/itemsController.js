@@ -1,5 +1,3 @@
-// import items from "./js/items.js"; 
-
 class ItemsController {
     constructor(currentId = 0) {
         this.items = []; 
@@ -38,5 +36,3 @@ class ItemsController {
 // console.log(newItem.items);
 
 console.log("hello world");
-
-// export default items;
