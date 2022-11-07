@@ -82,8 +82,8 @@
                 <input type="text" class="form-control" id="phone-num" placeholder="+1 (415)-867-5389" required>
             </div>
             <div class="col-md-6">
-                <label for="reason" class="form-label">Reason for contact*</label>
-                <select id="reason" class="form-select">
+                <label for="reason" class="form-label">Reason for contact</label>
+                <select id="reason" class="form-select" required>
                     <option selected>Choose</option>
                     <option value="wrong-order">Wrong order</option>
                     <option value="shipping">Shipping</option>
@@ -93,7 +93,7 @@
             </div>
             <div class="col-md-12">
                 <label for="explanation" class="form-label">Explanation</label>
-                <textarea class="form-control" id="explanation" rows="3"></textarea>
+                <textarea class="form-control" id="explanation" rows="3" required></textarea>
             </div>
             <div class="col-md-12">
                 <button type="submit" class="btn btn-primary">Submit</button>
