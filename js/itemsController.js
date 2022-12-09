@@ -9,30 +9,27 @@ class ItemsController {
             id: this.currentId++, 
             name: name, 
             description: description,
-            img: img,
-            // sizes: sizes,
-            // colors: colors,
-            // created: created,
+            img: img
         };        
         this.items.push(item);
     };
-    
-    loadItemsFromLocalStorage() {
-        const unparsedLSItems = localStorage.getItem('items');
-        const parsedLSItems = JSON.parse(unparsedLSItems);
-        for(let i = 0; i<parsedLSItems.length; i++){
-            console.log(parsedLSItems[i]);
-            this.addItem(parsedLSItems[i].name, parsedLSItems[i].description, parsedLSItems[i].img);
-        }
-    };
 
-    saveItemsToLocalStorage() {
-        const save = localStorage.setItem();
+    loadItemsFromLocalStorage() {
+        const storageItems = localStorage.getItem("ItemsList")
+        if (storageItems) {
+            const items = JSON.parse(storageItems);
+            for (var i = 0; i < items.length; i++) {
+                const item = items[i];
+                this.items.push(item);
+            }
+        }
     }
 } 
+
+export default ItemsController;
 
 // const newItem = new ItemsController()
 // newItem.addItem("shoes", "footwear", "pictures");
 // console.log(newItem.items);
 
-console.log("hello world");
+// console.log("hello world");
