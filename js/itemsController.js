@@ -9,29 +9,30 @@ class ItemsController {
             id: this.currentId++, 
             name: name, 
             description: description,
-            img: img
+            img: img,
+            // sizes: sizes,
+            // colors: colors,
+            // created: created,
         };        
         this.items.push(item);
     };
     
     loadItemsFromLocalStorage() {
-        const unparsedLSItems = localStorage.getItem('ItemsList');
+        const unparsedLSItems = localStorage.getItem('items');
         const parsedLSItems = JSON.parse(unparsedLSItems);
-        for(let i = 0; i < parsedLSItems.length; i++){
+        for(let i = 0; i<parsedLSItems.length; i++){
             console.log(parsedLSItems[i]);
             this.addItem(parsedLSItems[i].name, parsedLSItems[i].description, parsedLSItems[i].img);
         }
     };
 
-    // saveItemsToLocalStorage() {
-    //     localStorage.setItem('ItemsList', JSON.stringify(items));
-    // }
+    saveItemsToLocalStorage() {
+        const save = localStorage.setItem();
+    }
 } 
-
-export default ItemsController;
 
 // const newItem = new ItemsController()
 // newItem.addItem("shoes", "footwear", "pictures");
 // console.log(newItem.items);
 
-// console.log("hello world");
+console.log("hello world");
