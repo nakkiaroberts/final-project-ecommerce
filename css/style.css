@@ -143,6 +143,12 @@ footer {
     border: 10px solid white;
 }
 
+.team-bio h6, .team-bio p {
+color: aliceblue;    
+}
+
+
+
 .contact-us {
   padding: 100px;
 }
