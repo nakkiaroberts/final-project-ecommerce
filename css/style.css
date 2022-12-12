@@ -195,6 +195,15 @@ color: aliceblue;
     padding-top: 20px;
 }
 
+.more {
+  padding-top: 55px;
+}
+
+.card a {
+  text-decoration: none;
+  color: black; 
+}
+
 /* End of Index.html CSS */
 
 /* Start products css */
