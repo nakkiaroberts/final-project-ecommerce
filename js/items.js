@@ -20,14 +20,7 @@ const addItems = (ev)=> { // passing the user clicking event
 
 if(btn) {
     btn.addEventListener('click', addItems);
-    // document.getElementById('btn').onclick = function() {displayItem()};
 }
-// function displayItem() {
-//   let name = document.querySelector("#itemName");
-//   let message1 = document.querySelector("#message1");
-
-//   message1.innerHTML = "Item Name: " + itemName.value + " ";
-// }
 
 function addItemCard(newItem){
     const itemHTML = '<div class="card" style="width: 20rem;">\n' +
