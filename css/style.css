@@ -209,6 +209,8 @@ color: aliceblue;
 /* Start products css */
 
 .fashion {
+  padding-left: 25px;
+  justify-content: center;
   margin-top: 15px;
   margin-bottom: 15px;
   font-weight: bold;
@@ -259,6 +261,15 @@ color: aliceblue;
   text-align: center;
 }
 
+.list-items{
+  display: flex;
+}
+
+.list-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
 /* End products css */
 

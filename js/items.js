@@ -40,7 +40,7 @@ if(btn) {
 
 function addItemCard(newItem){
     const itemHTML = '<div class="card" style="width: 20rem;">\n' +
-        '    <img src="'+newItem.imageUrl +'" width="300" height="250"  alt="product image">\n' +
+        '    <img src="'+newItem.imageUrl +'" alt="product image">\n' +
         '    <div class="card-body">\n' +
         '        <h5 class="card-title">'+newItem.name+'</h5>\n' +
         '        <p class="card-text">'+newItem.description+'</p>\n' +
