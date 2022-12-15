@@ -7,24 +7,40 @@ const btn = document.getElementById('btn');
 const addItems = (ev)=> { // passing the user clicking event
     ev.preventDefault(); // stops the form from submitting (stops page from reloading)
     const name = document.getElementById('itemName').value;
-    const category = document.getElementById('category').value;
-    const image = document.getElementById('myFile').value;
+    const description = document.getElementById('category').value;
+    const imageUrl = document.getElementById('myFile').value;
 
-    itemsController.addItem(name, category, image);
+     // validation code
+     if (name == '' || description == 'Choose'|| imageUrl == '') {
+        alert('Please complete all entries!');
+    } else {
+        // Add the item to the ItemsController
+        itemsController.addItem(name, description, imageUrl);
 
-    document.querySelector('form').reset(); // to clear the form for the next entries
+        //saving to localStorage 
+        localStorage.setItem('ItemsList', JSON.stringify(itemsController.items));
 
-    //saving to localStorage
-    localStorage.setItem('ItemsList', JSON.stringify(itemsController.items));
+        // clear the form after user submits
+        const form = document.getElementsByName('addItemForm')[0];
+        form.reset();
+
+        alert('Item successfully added!');
+    }
+
+    // itemsController.addItem(name, description, imageUrl);
+
+    // //saving to localStorage
+    // localStorage.setItem('ItemsList', JSON.stringify(itemsController.items));
 }
 
 if(btn) {
     btn.addEventListener('click', addItems);
 }
 
+
 function addItemCard(newItem){
     const itemHTML = '<div class="card" style="width: 20rem;">\n' +
-        '    <img src="'+newItem.img +'" width="300" height="250"  alt="product image">\n' +
+        '    <img src="'+newItem.imageUrl +'" width="300" height="250"  alt="product image">\n' +
         '    <div class="card-body">\n' +
         '        <h5 class="card-title">'+newItem.name+'</h5>\n' +
         '        <p class="card-text">'+newItem.description+'</p>\n' +
@@ -32,23 +48,24 @@ function addItemCard(newItem){
         '    </div>\n' +
         '</div>\n' +
         '<br/>';
-    const itemsContainer = document.getElementById("list-items");
+    const itemsContainer = document.getElementById('list-items');
     if(itemsContainer) {
         itemsContainer.innerHTML += itemHTML;
     }
 }
 
-// function loadStorageSampleData(){
-//     if(!localStorage.getItem("ItemsList")){
-//         const sampleItems = [{'name':'juice',
-//         'img':'https://www.gs1india.org/media/Juice_pack.jpg',
-//         'description':'Orange and Apple juice fresh and delicious'},
-//         {'name':'Ruffles Chicken',
-//         'img':'https://s3-ap-southeast-1.amazonaws.com/www8.fairprice.com.sg/fpol/media/images/product/XL/13086598_LXL1.jpg',
-//         'description':'Ruffles Potato Chips - Chicken'}];
-//         localStorage.setItem("ItemsList", JSON.stringify(sampleItems));
-//     }
-// }
+function loadStorageSampleData(){
+    if(!localStorage.getItem('ItemsList')) {
+        const sampleItems = [{'name':'boots',
+        'description':'Brown sturdy boots',
+        'imageUrl':'images/boots.jpg',
+        },
+        {'name':'pink heels',
+        'description':'Comfortable heels that will make you stand out',
+        'imageUrl':'images/pinkHeels.jpg'}];
+        localStorage.setItem('ItemsList', JSON.stringify(sampleItems));
+    }
+}
 
 function loadCardsListFromItemsController(){
     for(var i = 0, size = itemsController.items.length; i < size ; i++){
@@ -57,6 +74,8 @@ function loadCardsListFromItemsController(){
     }
 }
 
-// loadStorageSampleData();
+loadStorageSampleData();
 itemsController.loadItemsFromLocalStorage();
 loadCardsListFromItemsController();
+
+
