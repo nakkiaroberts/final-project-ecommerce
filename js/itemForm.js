@@ -1,45 +1,40 @@
-// // Initialize a new ItemsController with currentId set to 0
+// Please go to items.js for validation code and form reset
+
+// import ItemsController from './itemsController.js';
+
+// // Initialize a new TaskManager with currentId set to 0
 // const itemsController = new ItemsController(0);
 
-// // Select the New Item Form
-// const newItemForm = document.querySelector('#newItemForm');
+// const btn = document.getElementById('btn');
 
-// // Add an 'onsubmit' event listener
-// newItemForm.addEventListener('submit', (event) => {
-//     // Prevent default action
-//     let messages = []
-// if (newItemName.value === '' || newItemName.value == null) {
-//   messages.push('Item name is required')
-// }
-// if (messages.length > 0)
-//     event.preventDefault();
-//     errorElement.innerText = messages.join(', ')
+// const addItems = ('submit', (ev)=> { // passing the user clicking event
+
+//     // stops the form from submitting (stops page from reloading)
+//     ev.preventDefault(); 
+
+//     // Getting the values
+//     const name = document.getElementById('itemName').value;
+//     const description = document.getElementById('category').value;
+//     const imageUrl = document.getElementById('myFile').value;
     
-//     // Select the inputs
-//     const newItemName = document.querySelector('#newItemName');
-//     const newItemDescription = document.querySelector('#newItemDescription');
-//     const newItemImageUrl = document.querySelector('#newItemImageUrl');    
+//     // validation code
+//     if (name == '' || description == 'Choose'|| imageUrl == '') {
+//         alert('Please complete all entries!');
+//     } else {
+//         // Add the item to the ItemsController
+//         itemsController.addItem(name, description, imageUrl);
 
-//     // Get the values of the inputs
-//     const name = newItemName.value;
-//     const description = newItemDescription.value;
-//     const imageUrl = newItemImageUrl.value;
+//         //saving to localStorage 
+//         localStorage.setItem('ItemsList', JSON.stringify(itemsController.items));
 
-//     /*
-//         Validation code here
-//     */
-//         // function validateForm() {
-//         //   let x = document.forms["myForm"]["fname"].value;
-//         //   if (x == "") {
-//         //     alert("Name must be filled out");
-//         //     return false;
-//         //   }
-//         // }   ????????
+//         // clear the form after user submits
+//         const form = document.getElementsByName('addItemForm')[0];
+//         form.reset();
 
-//     // Add the item to the ItemsController
-//     itemsController.addItem(name, description, imageUrl);
+//         alert('Item successfully added!');
+//     }
+// });
 
-//     // Clear the form
-//     newItemName.value = '';
-//     newItemDescription.value = ''; 
-//   });
+// if(btn) {
+//     btn.addEventListener('click', addItems);
+// }

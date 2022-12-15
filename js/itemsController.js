@@ -4,18 +4,18 @@ class ItemsController {
         this.currentId = currentId;
     }
 
-    addItem(name, description, img) {
+    addItem(name, description, imageUrl) {
         const item = {
             id: this.currentId++, 
             name: name, 
             description: description,
-            img: img
+            imageUrl: imageUrl
         };        
         this.items.push(item);
     };
 
     loadItemsFromLocalStorage() {
-        const storageItems = localStorage.getItem("ItemsList")
+        const storageItems = localStorage.getItem('ItemsList')
         if (storageItems) {
             const items = JSON.parse(storageItems);
             for (var i = 0; i < items.length; i++) {

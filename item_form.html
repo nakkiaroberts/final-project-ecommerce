@@ -88,14 +88,14 @@
     <!--Creating the Responsive Item Form-->
     <div class="item-form container mt-3">
         <h1>Create a New Item</h1>
-        <form class="row g-3">
+        <form class="row g-3" id="newItemForm" name="addItemForm">
             <div class="col-md-12">
                 <label for="itemName" class="form-label">Item Name</label>
-                <input type="text" class="form-control" id="itemName" required>
+                <input type="text" class="form-control" id="itemName">
             </div>
             <div class="col-md-3">
                 <label for="category" class="form-label">Item Category</label>
-                <select id="category" class="form-select" required>
+                <select id="category" class="form-select">
                     <option selected>Choose</option>
                     <option value="Men's">Men's Wear</option>
                     <option value="Women">Women's Wear</option>
@@ -109,16 +109,13 @@
             </div> -->
             <div class="col-md-12">
               <label for="myFile" class="form-label">Image link. Please insert a jpg link. Example - https://www.irishtimes.com/polopoly_fs/1.4078148!/image/image.jpg</label>
-              <input type="text" class="form-control" id="myFile" required>
+              <input type="text" class="form-control" id="myFile">
             </div>
             <div class="col-md-12">
                 <br>
-                <button id="btn" name="submit">Add Item</button>
-                <!-- <button onclick="displayItem()" id="btn" type="submit" class="btn btn-primary">Add Item</button> -->
+                <button id="btn" name="submit" type="submit" class="btn btn-primary">Add Item</button>
+                <!-- <button onclick="addItems()" id="btn" type="submit" class="btn btn-primary">Add Item</button> -->
             </div>
-            <!-- <div id="msg">
-              <pre></pre>
-            </div> -->
         </form>
       </div>
     <footer>
@@ -142,5 +139,6 @@
     <script src="./js/itemsController.js" type="module"></script>
     <script src="./js/items.js" type="module"></script>
     <script src="./js/index.js"></script>
+    <!-- <script src="./js/itemForm.js" type="module"></script> -->
   </body>
 </html>
