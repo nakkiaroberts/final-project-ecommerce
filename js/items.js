@@ -17,16 +17,7 @@ const addItems = (ev)=> { // passing the user clicking event
         // Add the item to the ItemsController
         itemsController.addItem(name, description, imageUrl);
 
-        //saving to the database 
-        itemsController.update(name, description, imageUrl);
-
-        //findItemById
-        itemsController.findItemById(id);
-
-        // deleting ?
-        itemsController.delete(id);
-
-        // localStorage.setItem('ItemsList', JSON.stringify(itemsController.items));
+        localStorage.setItem('ItemsList', JSON.stringify(itemsController.items));
         
         // clear the form after user submits
         const form = document.getElementsByName('addItemForm')[0];
@@ -44,7 +35,6 @@ const addItems = (ev)=> { // passing the user clicking event
 if(btn) {
     btn.addEventListener('click', addItems);
 }
-
 
 function addItemCard(newItem){
     const itemHTML = '<div class="card" style="width: 20rem;">\n' +
